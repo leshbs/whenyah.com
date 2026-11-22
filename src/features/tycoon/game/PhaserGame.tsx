@@ -1,18 +1,21 @@
 import { useEffect, useRef } from 'react'
 import Phaser from 'phaser'
 import { TycoonScene } from './TycoonScene'
+import { useShallow } from 'zustand/react/shallow'
 import { useTycoonStore } from '../tycoon.store'
 
 export function PhaserGame() {
   const containerRef = useRef<HTMLDivElement>(null)
   const gameRef = useRef<Phaser.Game | null>(null)
-  const snapshot = useTycoonStore((state) => ({
-    money: state.money,
-    capacity: state.capacity,
-    customers: state.customers,
-    isOpen: state.isOpen,
-    shops: state.shops,
-  }))
+  const snapshot = useTycoonStore(
+    useShallow((state) => ({
+      money: state.money,
+      capacity: state.capacity,
+      customers: state.customers,
+      isOpen: state.isOpen,
+      shops: state.shops,
+    })),
+  )
 
   useEffect(() => {
     if (!containerRef.current || gameRef.current) return

@@ -3,7 +3,8 @@ export type Shop = {
   name: string
   level: number
   owned: boolean
-  upgradeCost: number
+  upgradeCost: number // cost of the next level (buy or upgrade); 0 when maxed
+  maxed?: boolean
 }
 
 export type TycoonSnapshot = {
