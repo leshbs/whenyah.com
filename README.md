@@ -14,7 +14,7 @@ Rally game sekolah untuk maksimal 15 tim. Tim bermain minigame fisik pada 12 pos
 2. Jalankan `npm install`.
 3. Jalankan `npm run dev`.
 
-Versi awal tetap dapat dibuka tanpa Supabase karena halaman memakai seed UI lokal. Untuk backend, pasang Supabase CLI lalu jalankan migration dan seed dari folder `supabase/`.
+Versi awal tetap dapat dibuka tanpa Supabase karena halaman memakai seed UI lokal. Untuk backend, lihat `docs/supabase-setup.md` (migration, seed, akun, dan peran).
 
 ## Perintah
 

@@ -18,3 +18,9 @@ button:disabled { opacity: .55; }
 .form-page { display: grid; gap: 1rem; max-width: 480px; }.form-page h1, .form-page p { margin: 0; }.form-page label { display: grid; gap: .4rem; }.form-page select { padding: .65rem; border-radius: 8px; }.success { color: #78e08f; }
 table { width: 100%; border-collapse: collapse; background: #102943; border-radius: 14px; overflow: hidden; }th, td { padding: .85rem; text-align: left; border-bottom: 1px solid #244563; }
 @media (max-width: 640px) { .top-nav { flex-wrap: wrap; }.top-nav a:first-child { width: 100%; }.tycoon-hud, .shop-panel { grid-template-columns: 1fr; } }
+.stack { display: grid; gap: 1rem; }
+input { font: inherit; padding: .65rem; border-radius: 8px; border: 1px solid #244563; background: #0b1b2e; color: inherit; }
+label { display: grid; gap: .4rem; }
+.error { color: #ff9b9b; }
+.notice { margin: 0; padding: .5rem 5vw; background: #3a2f12; color: #ffe29a; font-size: .9rem; }
+.top-nav button { padding: .4rem .8rem; }
